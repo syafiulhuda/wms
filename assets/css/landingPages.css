@@ -1,0 +1,97 @@
+/*? global clearing */
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  /* box-sizing: border-box; */
+}
+
+a,
+h1,
+h2,
+h3,
+span,
+p {
+  text-decoration: none;
+}
+
+:root {
+  --light: #f7f7f7;
+  --dark: #222222;
+  --gap-primary: 16px;
+  --gap-secondary: 8px;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--dark);
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(253, 196, 11);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  font-size: 5rem;
+  margin-top: -2rem;
+}
+header h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+select option {
+  padding: 10px;
+}
+
+select,
+option {
+    cursor: pointer;
+}
+
+span {
+  font-style: italic;
+  background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(253, 247, 220));
+  background: linear-gradient(rgb(0, 0, 0), rgb(253, 247, 220));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ongoing {
+  color: rgba(0, 0, 0, 0.6);
+}
